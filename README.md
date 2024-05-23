@@ -34,7 +34,7 @@ Since the full dataset takes terabytes of storage, one may wish to download part
 ```
 python3 download_dataset.py --dest "/path/to/mini_dataset/" --download_config "./mini_download_config.json"
 ```
-建议使用minidownload，在minidownload中修改一下，把image，texture设为false。自行创建保存的文件夹。提前开启代理`source /etc/network_turbo`。
+建议使用minidownload，在minidownload中修改一下，把image，texture设为false。自行创建保存的文件夹。提前开启代理`source /etc/network_turbo`。metadata里应该存储着中性模型，meshtalk会将bin转化为obj
 
 在下载文件夹中可以看见一个html，html里列着许多mesh链接。audio里每个音频用内容命名的。对应的mesh也是用那个命名，找出与音频相同命名的mesh就是需要的那个mesh了。
 
